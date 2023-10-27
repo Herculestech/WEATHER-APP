@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 50px;
+    color: #fff;
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  label {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  #weather-info {
+    margin-top: 30px;
+  }
+
+  #weather-info h2 {
+    margin-bottom: 20px;
+  }
+
+  #weather-info p {
+    margin-bottom: 10px;
+  }
+   .cold-bg {
+    background-image: url('cold.jpg');
+  }
+
+  .moderate-bg {
+    background-image: url('moderate.jpg');
+  }
+
+  .warm-bg {
+    background-image: url('warm.jpg');
+  }
+
+  .hot-bg {
+    background-image: url('hot.jpg');
+  }
