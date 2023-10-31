@@ -8,7 +8,7 @@ function getWeatherData() {
   document.getElementById('get-weather-btn').addEventListener('click', getWeatherData);
 
   function updateBackgroundImage(temperature) {
-    const bodyElement =document.body;
+    const bodyElement = document.body;
     if (temperature < 273) {
     // Very cold (below 0 degrees Celsius or 273 Kelvin)
     //alert("i dey work")
@@ -24,16 +24,13 @@ function getWeatherData() {
     // Hot (above 25 degrees Celsius or 298 Kelvin)
     document.body.style.backgroundColor='orange'
   }
-      // Remove all existing weather condition classes from body and add the appropriate one
-  //bodyElement.classList.remove('cold-bg', 'moderate-bg', 'warm-bg', 'hot-bg');
-  //bodyElement.classList.add(bgClass);
   }
 
   // Modify the displayWeather function to call updateBackgroundImage
   function displayWeather(weatherData) {
 const cityName = weatherData.name;
 const temperatureKelvin = weatherData.main.temp;
-const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(1); // Convert Kelvin to Celsius with 2 decimal places
+const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(1);
 const weatherDescription = weatherData.weather[0].description;
 
 // Update the background image based on temperature
